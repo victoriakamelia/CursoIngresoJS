@@ -11,7 +11,7 @@ function SacarResto()
     numeroDos=document.getElementById("numeroDivisor").value;
     numeroUno=parseInt(numeroUno);
     numeroDos=parseInt(numeroDos);
-    resultado=numeroUno/numeroDos;
+    resultado=numeroUno%numeroDos;
     alert("El resto es "+resultado);
 	
 }
