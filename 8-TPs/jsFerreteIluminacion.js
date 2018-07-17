@@ -16,11 +16,14 @@ function CalcularPrecio ()
     var msg;
     var marca;
     
+    
+    
     cantidadLamparitas=document.getElementById("Cantidad").value;
     marca=document.getElementById("Marca").value;
     cantidadLamparitas=parseInt(cantidadLamparitas);
     precio=35;
     msg="El descuento de su compra es: ";
+    
    //aaaaaaaaaaaaaaaaa//
     if (cantidadLamparitas >= 6)
     {
@@ -52,10 +55,13 @@ function CalcularPrecio ()
     
      { precioDescuento=(cantidadLamparitas*precio)*10/100;
          alert(msg+precioDescuento);
-     }else if (cantidadLamparitas == 3 && (marca != "ArgentinaLuz" || marca != "FelipeLamparas" )
+     }else if (cantidadLamparitas == 3 && (marca != "ArgentinaLuz" || marca != "FelipeLamparas" ))
     
-     { precioDescuento=(cantidadLamparitas*precio)*5/100;
+     {
+     precioDescuento=(cantidadLamparitas*precio)*5/100;
          alert(msg+precioDescuento);
      }
- 	
+    
+   
 }
+
