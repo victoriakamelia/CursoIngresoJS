@@ -12,54 +12,68 @@ function CalcularPrecio ()
 {
     var cantidadLamparitas;
     var precio;
-    var precioDescuento;
-    var msg;
+    var descuento;
+    var precioConDescuento;
     var marca;
-    
-    
     
     cantidadLamparitas=document.getElementById("Cantidad").value;
     marca=document.getElementById("Marca").value;
     cantidadLamparitas=parseInt(cantidadLamparitas);
     precio=35;
-    msg="El descuento de su compra es: ";
-    
+   
    //aaaaaaaaaaaaaaaaa//
     if (cantidadLamparitas >= 6)
     {
-        precioDescuento=(cantidadLamparitas*precio)*50/100;
-        alert(msg+precioDescuento);
+        descuento=(cantidadLamparitas*precio)*50/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
         //bbbbbbbbbbbbbbbbb//
-     }else if (marca=="ArgentinaLuz" && cantidadLamparitas == 5){
-        precioDescuento=(cantidadLamparitas*precio)*40/100;
-        alert(msg+precioDescuento);
-     }else if (marca!="ArgentinaLuz" && cantidadLamparitas == 5)
+     }else if (marca=="ArgentinaLuz" && cantidadLamparitas == 5)
+     {
+        descuento=(cantidadLamparitas*precio)*40/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
+     }else if (marca !="ArgentinaLuz" && cantidadLamparitas == 5)
     {
-            precioDescuento=(cantidadLamparitas*precio)*30/100;
-            alert(msg+precioDescuento);
+        descuento=(cantidadLamparitas*precio)*30/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
             //cccccccccccccccccccccc//
      }else if (cantidadLamparitas==4 && (marca=="FelipeLamparas" || marca=="ArgentinaLuz"))
     {
-        precioDescuento=(cantidadLamparitas*precio)*25/100;
-        alert(msg+precioDescuento);
+        descuento=(cantidadLamparitas*precio)*25/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
      }else if (cantidadLamparitas==4 && (marca!="FelipeLamparas" || marca!="ArgentinaLuz"))
     {
-        precioDescuento=(cantidadLamparitas*precio)*20/100;
-        alert(msg+precioDescuento);
+        descuento=(cantidadLamparitas*precio)*20/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
         //dddddddd//
      }else if (cantidadLamparitas == 3 && marca == "ArgentinaLuz")
     
-    { precioDescuento=(cantidadLamparitas*precio)*15/100;
-        alert(msg+precioDescuento);
+    { descuento=(cantidadLamparitas*precio)*15/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
      }else if (cantidadLamparitas == 3 && marca == "FelipeLamparas")
     
-     { precioDescuento=(cantidadLamparitas*precio)*10/100;
-         alert(msg+precioDescuento);
+     { descuento=(cantidadLamparitas*precio)*10/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
      }else if (cantidadLamparitas == 3 && (marca != "ArgentinaLuz" || marca != "FelipeLamparas" ))
     
      {
-     precioDescuento=(cantidadLamparitas*precio)*5/100;
-         alert(msg+precioDescuento);
+        descuento=(cantidadLamparitas*precio)*5/100;
+        precioConDescuento=(cantidadLamparitas*precio)-descuento;
+        document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
+        
      }
     
    
