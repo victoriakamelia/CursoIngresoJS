@@ -2,8 +2,8 @@ function mostrar()
 {
 
 	var contador=0;
-	var negativos=0;
-	var positivos;
+	var contadorNegativos=0;
+	var contadorPositivos;
 	var cantPositivo;
 	var cantNegativos;
 	var ceros;
@@ -27,8 +27,7 @@ function mostrar()
 	while(respuesta!="no")
 	{
 		if(num<0){
-			contador++
-			num=num+negativos;
+			contadorNegativos++;
 		}
 		
 	document.write()
