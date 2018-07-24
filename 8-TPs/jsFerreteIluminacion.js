@@ -15,7 +15,9 @@ function CalcularPrecio ()
     var descuento;
     var precioConDescuento;
     var marca;
-    
+    var iibb;
+    var iibbPrecio;
+
     cantidadLamparitas=document.getElementById("Cantidad").value;
     marca=document.getElementById("Marca").value;
     cantidadLamparitas=parseInt(cantidadLamparitas);
@@ -75,7 +77,14 @@ function CalcularPrecio ()
         document.getElementById("precioDescuento").value="Total a pagar con descuento: "+precioConDescuento;
         
      }
+     
+     if (precioConDescuento >= 120) {
+
+        iibb=(precioConDescuento*10/100);
+        iibbPrecio=iibb+precioConDescuento;
+        alert("IIBB, USTED PAGÓ "+iibbPrecio+"SIENDO "+IIBB+"EL IMPUESTO QUE PAGÓ");
+
     
-   
+    }
 }
 
