@@ -1,39 +1,35 @@
 function mostrar()
 {
 
-	var contador=0;
-	var contadorNegativos=0;
-	var contadorPositivos;
-	var cantPositivo;
-	var cantNegativos;
-	var ceros;
-	var pares;
-	var impares;
-	var promedioP;
+	var contP=0
+	var contN=0
+	var acuP=0
+	var acuN=0
+	var contC=0
+	var contNp=0
 	var promedioN;
-	var diferenciaPn;
+	var posimenosnega;
 	var respuesta="si";
 	var num;
 
-	num=prompt("Ingrese un número:");
-	num=parseInt(num);
-	while(isNaN(num)){
-		
-		num=prompt("Ingrese un número:");
-		num=parseInt(num);
-	}
-	respuesta=prompt("¿Desea continuar?");
-
-	while(respuesta!="no")
+	while (respuesta != "no")
 	{
-		if(num<0){
-			contadorNegativos++;
-		}
-		
-	document.write()
+		num=prompt("Ingrese un número");
+		num=parseInt(num);
+		if(num < 0)
+		{
+			acuN=anuN+1;
+		} else if(num>0)
+		{
+			acuP=acuP+1;
+		} else if(num>0)
+		{
+			contP++;
+		} else if(num<0)
+		{
+			contN++;
+		} else if()
 	}
-
-
 
 
 }//FIN DE LA FUNCIÓN
