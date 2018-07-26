@@ -28,7 +28,15 @@ function mostrar()
 		} else if(num<0)
 		{
 			contN++;
-		} else if()
+		} else if(num == 0)
+		{
+			contC++;
+		}else if(num%2 == 0)
+		{
+			contNp++;
+		}
+		promedioN=acuN/co0ntN
+		
 	}
 
 
