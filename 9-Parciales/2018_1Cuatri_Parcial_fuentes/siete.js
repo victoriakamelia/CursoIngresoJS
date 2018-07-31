@@ -3,7 +3,7 @@ function mostrar()
     var cont=1;
     var nombre;
     var sexo;
-    var edad;
+    var edad=0;
     var contF=0;
     var contM=0;
     var contMayor=0;
@@ -17,6 +17,8 @@ function mostrar()
     var promedioF;
     var promedioM;
     var promedioT;
+    var nombreEdadMax;
+    var
 
    while(cont <= 4)
    {
