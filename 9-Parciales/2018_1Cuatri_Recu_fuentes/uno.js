@@ -10,7 +10,7 @@ function mostrar()
     altura=parseInt(altura);
     base=parseInt(base);
     superficie=(base*altura)/2;
-    perimetro=base*3;
+    perimetro=altura*3;
     alert("La superficie es "+superficie+" y su perìmetro es "+perimetro);
 
 
