@@ -1,7 +1,7 @@
 function mostrar()
 {
    
-   for(var i=0; i<=0 ; i++)
+   for(var i=0; ; i++)
    {
        alert=("No termina más");
       
