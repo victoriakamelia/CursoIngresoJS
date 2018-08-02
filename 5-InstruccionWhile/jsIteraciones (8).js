@@ -18,7 +18,7 @@ function mostrar()
 		} else {
 			negativo*=numero;
 		}
-		respuesta=prompt(¿Desea continuar?);
+		respuesta=prompt("¿Desea continuar?");
 
 
 
